@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { NgUploaderOptions } from 'ngx-uploader';
+import { UploaderOptions } from 'ngx-uploader';
 
 @Component({
   selector: 'layouts',
@@ -11,14 +11,16 @@ export class Layouts {
   public profile:any = {
     picture: 'assets/img/app/profile/Nasta.png'
   };
-  public uploaderOptions:NgUploaderOptions = {
+  public uploaderOptions:UploaderOptions = {
     // url: 'http://website.com/upload'
-    url: '',
+    //url: '',
+      concurrency: 1,
   };
 
-  public fileUploaderOptions:NgUploaderOptions = {
+  public fileUploaderOptions:UploaderOptions = {
     // url: 'http://website.com/upload'
-    url: '',
+    //url: '',
+    concurrency: 1,
   };
   
   constructor() {

@@ -215,7 +215,15 @@ export const PAGES_MENU = [
                  title: 'Hot Tables',
                }
              }
-           }
+           },
+           {
+            path: 'devicelist',
+            data: {
+              menu: {
+                title: 'Device List',
+              }
+            }
+          }
         ]
       },
       {
